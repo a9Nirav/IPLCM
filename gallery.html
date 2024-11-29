@@ -150,94 +150,20 @@
     <!-- Page Header End -->
 
     <div class="container-fluid  px-0">
-        <div class="container py-5">
-            <div class="bento-grid">
-                <div class="bento-item">
-                    <img src="/img/gallery/DSC_3068.jpg" alt="Mountain Landscape" class="img-fluid">
-                    <div class="category-badge">Mountains</div>
-                    <div class="description-overlay">
-                        <h3>Majestic Peaks</h3>
-                        <p>Towering mountains pierce the clouds in this breathtaking alpine scene.</p>
-                    </div>
-                </div>
-                <div class="bento-item">
-                    <img src="/img/gallery/DSC_3069.jpg" alt="Lush Forest" class="img-fluid">
-                    <div class="category-badge">Forest</div>
-                    <div class="description-overlay">
-                        <h3>Enchanted Woods</h3>
-                        <p>Sunlight filters through the dense canopy of this mystical forest.</p>
-                    </div>
-                </div>
-                <div class="bento-item">
-                    <img src="/img/gallery/DSC_3070.jpg" alt="Cascading Waterfall" class="img-fluid">
-                    <div class="category-badge">Waterfall</div>
-                    <div class="description-overlay">
-                        <h3>Thundering Falls</h3>
-                        <p>Water cascades over rocky cliffs, creating a mesmerizing natural spectacle.</p>
-                    </div>
-                </div>
-                <div class="bento-item">
-                    <img src="/img/gallery/DSC_3076.jpg" alt="Desert Landscape" class="img-fluid">
-                    <div class="category-badge">Desert</div>
-                    <div class="description-overlay">
-                        <h3>Golden Dunes</h3>
-                        <p>Endless sand dunes stretch to the horizon in this stark desert landscape.</p>
-                    </div>
-                </div>
-                <div class="bento-item">
-                    <img src="/img/gallery/DSC_3374.jpg" alt="Aurora Borealis" class="img-fluid">
-                    <div class="category-badge">Night Sky</div>
-                    <div class="description-overlay">
-                        <h3>Northern Lights</h3>
-                        <p>The aurora borealis paints the night sky with vibrant, dancing colors.</p>
-                    </div>
-                </div>
-                <div class="bento-item">
-                    <img src="/img/gallery/IPL_4998.jpg" alt="Coral Reef" class="img-fluid">
-                    <div class="category-badge">Underwater</div>
-                    <div class="description-overlay">
-                        <h3>Vibrant Reef</h3>
-                        <p>A colorful underwater ecosystem teems with life in this coral reef scene.</p>
-                    </div>
-                </div>
-                <div class="bento-item">
-                    <img src="/img/gallery/DSC_3068.jpg" alt="Mountain Landscape" class="img-fluid">
-                    <div class="category-badge">Mountains</div>
-                    <div class="description-overlay">
-                        <h3>Majestic Peaks</h3>
-                        <p>Towering mountains pierce the clouds in this breathtaking alpine scene.</p>
-                    </div>
-                </div>
-                <div class="bento-item">
-                    <img src="/img/gallery/DSC_3069.jpg" alt="Lush Forest" class="img-fluid">
-                    <div class="category-badge">Forest</div>
-                    <div class="description-overlay">
-                        <h3>Enchanted Woods</h3>
-                        <p>Sunlight filters through the dense canopy of this mystical forest.</p>
-                    </div>
-                </div>
-                <div class="bento-item">
-                    <img src="/img/gallery/DSC_3070.jpg" alt="Cascading Waterfall" class="img-fluid">
-                    <div class="category-badge">Waterfall</div>
-                    <div class="description-overlay">
-                        <h3>Thundering Falls</h3>
-                        <p>Water cascades over rocky cliffs, creating a mesmerizing natural spectacle.</p>
-                    </div>
-                </div>
-                <div class="bento-item">
-                    <img src="/img/gallery/DSC_3070.jpg" alt="Cascading Waterfall" class="img-fluid">
-                    <div class="category-badge">Waterfall</div>
-                    <div class="description-overlay">
-                        <h3>Thundering Falls</h3>
-                        <p>Water cascades over rocky cliffs, creating a mesmerizing natural spectacle.</p>
-                    </div>
-                </div>
-                <div class="bento-item">
-                    <img src="/img/gallery/DSC_3070.jpg" alt="Cascading Waterfall" class="img-fluid">
-                    <div class="category-badge">Waterfall</div>
-                    <div class="description-overlay">
-                        <h3>Thundering Falls</h3>
-                        <p>Water cascades over rocky cliffs, creating a mesmerizing natural spectacle.</p>
+        <div class="container mt-4">
+            <div class="row" id="gallery">
+                <!-- Images will be dynamically added here -->
+            </div>
+        </div>
+
+        <!-- Modal for image preview -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-4" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <div class="modal-body p-0">
+                        <img src="" id="modalImage" class="img-fluid" alt="Preview">
                     </div>
                 </div>
             </div>
