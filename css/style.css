@@ -1117,14 +1117,16 @@ body {
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 16%;
+    width: auto;
+    margin: 0 5%;
     padding: 0 20px;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
 }
 
 .footer-logo {
-    flex-basis: 30%;
+    flex-basis: 23%;
 }
 
 .logo {
@@ -1143,7 +1145,7 @@ body {
 }
 
 .footer-links {
-    flex-basis: 25%;
+    flex-basis: 15%;
 }
 
 .footer-links h3, .footer-newsletter h3 {
@@ -1168,7 +1170,7 @@ body {
 }
 
 .footer-newsletter {
-    flex-basis: 35%;
+    flex-basis: 30%;
 }
 
 .newsletter-form {
