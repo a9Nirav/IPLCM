@@ -138,7 +138,7 @@ body {
     padding: 15px 40px;
     text-align: center;
     display: inline-block;
-    clip-path: polygon(10% 1%, 104% -10%, 91% 50%, 100% 100%, 10% 100%, 0% 50%);
+    clip-path: polygon(10% 1%, 102% -10%, 93% 50%, 100% 100%, 10% 100%, 0% 50%);
     letter-spacing: 1px;
 }
 
