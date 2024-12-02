@@ -181,18 +181,18 @@ anime.timeline({loop: true})
 
 
 //   mouse animation 
-const cursor = document.querySelector('.cursor');
+// const cursor = document.querySelector('.cursor');
 
-document.addEventListener('mousemove', e => {
-    cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
-});
+// document.addEventListener('mousemove', e => {
+//     cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+// });
 
-document.addEventListener('click', e => {
-    cursor.classList.add("expand");
-    setTimeout(() => {
-        cursor.classList.remove("expand");
-    }, 500);
-});
+// document.addEventListener('click', e => {
+//     cursor.classList.add("expand");
+//     setTimeout(() => {
+//         cursor.classList.remove("expand");
+//     }, 500);
+// });
 
 
 
