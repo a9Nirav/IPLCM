@@ -1,0 +1,115 @@
+
+/* Masonry Grid */
+.masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    grid-auto-flow: dense;
+}
+
+.grid-item {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+/* Hero Section */
+.hero {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.05);
+}
+
+/* Overlay Styling */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Typography Styles */
+h1, h2 {
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 0.3em;
+    margin-top: 1rem;
+}
+
+.text-container {
+    padding: 3rem;
+    background-color: #f8f8f8;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333;
+}
+
+.handwritten {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-top: 1.5rem;
+    color: #666;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .masonry-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .grid-item {
+        height: auto;
+    }
+
+    .image-container {
+        padding-bottom: 75%;
+    }
+
+    .image-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
